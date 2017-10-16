@@ -1,1 +1,210 @@
-wwwwwwwwww
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="new jianshu.css" rel="stylesheet" type="text/css"/>
+    <title>简书--开始你的创作</title>
+</head>
+<body    class="background">
+<div    class="fudong">
+    <a   class="jianshu">简书</a>
+    <a   class="fudongzi">发现</a>
+    <a   class="fudongzi">关注</a>
+    <a   class="fudongzi">消息</a>
+    <input     type="text"   placeholder="搜索" class="sousuo"   style="border-radius: 8px">
+        <img   src="放大镜%20(1).png"     class="find" >
+    <input  type="button"  value="写文章"      style="border-radius: 15px;"   id="fudong"  >
+</div>
+<br>
+<br>
+<br><br><br><br>
+<img      class="tupian"  src="http://img15.3lian.com/2015/f2/50/d/71.jpg"   >
+    <div  class="div3">
+        <div   class="div4"> <input  type="button"    value="新上榜 >"   style="border-radius: 12px"   class="tupian1"><a  href="http://www.jianshu.com/recommendations/notes?category_id=56&utm_medium=index-banner-s&utm_source=desktop"></a></div><br>
+        <div   class="div4"><input  type="button"    value="7日热门 >"  style="border-radius: 12px" class="tupian2" ></div><br>
+        <div   class="div4" ><input  type="button"    value="30日热门 >" style="border-radius: 12px"  class="tupian3" ></div><br>
+        <div   class="div4"><input  type="button"    value="简书出版 >" style="border-radius: 12px" class="tupian4" ></div><br>
+        <div   class="div4"><input  type="button"    value="简书大学堂 >" style="border-radius: 12px" class="tupian5" ></div><br>
+    </div>
+<div    class="name">
+    <img   src="http://upload.jianshu.io/users/upload_avatars/1359662/b7003870-b274-4451-80f2-ddd640960462.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240"    width="40"   height="40"  style="border-radius:50%" />
+    <b    id="wenzi">小丸子的杂货集</b>
+    <b     id="wenzixiao">10分钟前</b><br>
+    <a    href="http://www.jianshu.com/p/e1eb13a137aa"   id="wenzilianjie"  >手把手教你，如何用手机修图软件做出逼格超高的照片！</a><br>
+    <a   id="wenzichaoxiao">大家好哇，我是小丸子~ 国庆放假，很多同学都选择出去游玩，所以这篇文章<br>我想给大家分享一些关于拍照修图的小技巧，让你用手机就能修出超高逼格的<br>照片，刷爆你的朋友圈。 Ps：这篇文...</a>
+    <br>
+    <input     type="button"  value="娱乐八卦"  id="anniu"   style="border-radius: 8px"><img src="眼睛.png" style="margin: 0  10px 7px 10px" width="30"    height="30">
+</div>
+<br>
+<br>
+<hr   id="fenggexian"  size="1">
+<div     class="name">
+    <img   src="http://upload.jianshu.io/users/upload_avatars/926747/00413b9b-0cff-41fc-b58b-6e8d4f313e6b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96"    width="40"   height="40"  style="border-radius:50%" />
+    <b    id="wenzi">江昭和</b>
+    <b     id="wenzixiao">40分钟前</b><br>
+    <a    href="http://www.jianshu.com/p/02dc5d887a04"   id="wenzilianjie"  >所谓成熟，就是一个人好好生活</a><br>
+    <a   id="wenzichaoxiao">回家之后，一个人住一所房子，自己做饭，自己洗碗，自己打扫卫生，自己独自<br>跋涉漫长夜晚。﻿ ﻿以前给妈打电话，听筒里可以听见回音，想见偌大的房子里，一<br>个人生活起居，不禁有几分恻隐...</a>
+</div>
+<div id="backtop"><a    href="#" >top</a></div>
+</body>
+</html>
+.background{
+    background-color: #ffb6c1;
+}
+.fudong{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 10000;
+    background-color: #ebcccc;
+    border-width: 1px;
+    border-style: groove;
+    padding: 15px;
+    font-size: 16px;
+}
+.jianshu{
+    font-weight: 500;
+    font-size: 30px;
+}
+.fudongzi{
+    font-size: 20px;
+    padding-left: 100px;
+}
+.sousuo{
+    background-color: lightgray;
+    width: 100px;
+    height: 20px;
+    margin-left: 100px;
+}
+.div3{
+    margin-left: 1000px;
+    margin-top:200px;
+    height: 100px;
+}
+
+.div4{
+    margin-top: 1px;
+}
+.tupian1 {
+    width: 220px;
+    height: 50px;
+    color: brown;
+    background-color: burlywood;
+}
+    .tupian{
+        height: 350px;
+        width: 500px;
+        margin : 100px 200px 0  150px;
+    }
+.tupian2{
+    width: 220px;
+    height: 50px;
+    color: blue;
+    background-color: aquamarine;
+}
+.tupian3{
+    width: 220px;
+    height: 50px;
+    color: darkgreen;
+    background-color: coral;
+}
+.tupian4{
+    width: 220px;
+    height: 50px;
+    color: fuchsia;
+    background-color: honeydew;
+} .tupian5{
+      width: 220px;
+      height: 50px;
+      color: dodgerblue;
+      background-color: lightblue;
+  }
+.find{
+    width: 25px;
+    height: 25px;
+}
+.xiaotubiaowenzi{
+    background-color: palegreen;
+    width: 100px;
+    height: 32px;
+    margin-top:300px;
+    margin-left: 100px;
+    border-radius: 8px;
+}
+.xiaotupian{
+    width: 30px;
+    height: 30px;
+}
+.xiaotubiaowenzi2{
+    background-color: palegreen;
+    width: 100px;
+    height: 32px;
+    border-radius: 8px;
+}
+.wenzi{
+    padding: 0 11px 0 11px;
+}
+#backtop{
+    position: fixed;
+    bottom: 8px;
+    right: 30px;
+    color: #a94442;
+    z-index: 1000;
+    background: #c8c8c8 ;
+    padding: 10px
+}
+.tupianerweima{
+    margin-left: 1000px;
+    width: 80px;
+    height: 80px;
+}
+div#resize a:hover { position: absolute;}
+div#resize a:hover img {
+    width: 200px; height: 200px}
+.name {
+    margin-left: 10%;
+    margin-top: 0;
+}
+#wenzi{
+    font-size: 23px;
+    color: #6dacf4;
+    margin-left: 10px;
+}
+#wenzixiao{
+    font-size: 10px;
+    color: #5e5e5e;
+}
+#wenzilianjie{
+    color: #d58512;
+    font-size: 20px;
+}
+#wenzichaoxiao{
+    font-size: 16px;
+    color: #d58512;
+}
+#fenggexian{
+    margin:0 650px 0 136px ;
+
+}
+#anniu{
+   background-color: #afd9ee;
+    color: #5e5e5e;
+    margin: px;
+}
+#fudong{
+    background-color: #d9534f;
+    color: #d0e9c6;
+    width: 100px;
+    height: 37px;
+    margin-right: 0;
+}
+#tupian2{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 150px;
+    margin-left: 150px;
+}
