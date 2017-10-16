@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <link href="new jianshu.css" rel="stylesheet" type="text/css"/>
     <title>简书--开始你的创作</title>
+    <style>
+        div#resize a:hover { position: absolute;}
+        div#resize a:hover img { width: 200px; height: 200px}
+    </style>
+    <script type="text/javascript" >
+        function omover() {
+            var divlist = document.getElementById("lishistory");
+            divlist.style.display = "block";
+        }
+        function omout() {
+            var divlist = document.getElementById("lishistory");
+            divlist.style.display = "none";
+        }
+
+    </script>
 </head>
 <body    class="background">
 <div    class="fudong">
@@ -79,7 +94,11 @@
     <input     type="button"  value="娱乐八卦"  id="anniu"   style="border-radius: 8px"><img src="眼睛.png" style="margin: 0  10px 7px 10px  ;width: 30px ;   height:30px"><img src="消息.png"   style="margin: 0  10px 7px 10px  ;width: 14px ;   height:12px"><img src="爱心.png"   style="margin: 0  10px 7px 10px  ;width: 22px ;   height:22px">
 
 </div>
-
+<div id="resize">
+    <a href="#">
+        <img src="http://cdn2.jianshu.io/assets/web/download-app-qrcode-0257cd2c1d094cba9caa7bdc9e5a1393.png"  class="tupianerweima" >
+    </a>
+</div>
 <div id="backtop"><a    href="#" >top</a></div>
 </body>
 </html>
