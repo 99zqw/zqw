@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片切换</title>
+    <style>
+       .img1{
+           width: 550px;
+           height:500px;
+           margin-left:380px;
+           margin-top:150px;
+           position:absolute;
+       }
+        .prev{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            margin-left: 390px;
+            margin-top: 400px;
+            position: absolute;
+            border: 5px solid white;
+            font-size: 30px;
+            color: white;
+            line-height: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            filter: alpha(opacity:50);
+            opacity:0.5;
+        }
+        .prev:hover{
+            filter: alpha(opacity:90);
+            opacity:0.9;
+        }
+       .nextv{
+             width: 30px;
+             height: 30px;
+             background-color: black;
+             margin-left: 880px;
+             margin-top: 400px;
+             position:absolute;
+             border:5px solid white;
+             font-size: 30px;
+             color: white;
+             font-weight: bold;
+             text-align: center;
+             filter: alpha(opacity:50);
+             opacity:0.5;
+         }
+       .nextv:hover{
+           filter: alpha(opacity:90);
+           opacity:0.9;
+       }
+        .top{
+            width: 550px;
+            height: 20px;
+            background-color: black;
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            margin-left: 380px;
+            margin-top: 150px;
+            position: absolute;
+            filter: alpha(opacity:50);
+            opacity:0.5;
+        }
+        .bottom{
+            margin-top: 630px;
+            margin-left: 380px;
+            width: 550px;
+            height: 26px;
+            background-color: #1e1e1e;
+            font-size: 10px;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            filter: alpha(opacity:80);
+            opacity: 0.8;
+            text-align: center;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oPrev = document.getElementById('prev');
+            var oNextv = document.getElementById('nextv');
+            var oImg = document.getElementById('img1');
+            var oTop = document.getElementById('top');
+            var oBottom = document.getElementById('bottom');
+            var arrImg = ['http://soso6.gtimg.cn/sosopic/0/6776673662183224176/640','http://image.tianjimedia.com/uploadImages/2013/220/7UWSCYL47P3P.jpg','http://dl.bizhi.sogou.com/images/1440x900/2013/10/19/394877.jpg'];
+            var arrText = ['第一张','第二张','第三张'];
+            var num = 0;
+            oTop.innerHTML = num+1+'/'+arrText.length;
+            oImg.src = arrImg[num];
+            oBottom.innerHTML = arrText[num];
 
+            oNextv.onclick = function () {
+                num++;
+                if (num < arrImg.length)
+                    oTop.innerHTML = num+1+'/'+arrText.length;
+                oImg.src = arrImg[num];
+                oBottom.innerHTML = arrText[num];
+                if(num === arrText.length-1)
+                   num = -1;
+            }
+            oPrev.onclick = function () {
+                num --;
+                if (num === -1 )
+                num = arrText.length-1;
+                if (num < arrImg.length) {
+                    oTop.innerHTML = num + 1 + '/' + arrText.length;
+                    oImg.src = arrImg[num];
+                    oBottom.innerHTML = arrText[num];
+                }
+                }
+        }
+    </script>
+</head>
+<body>
+<img id = "img1" class = "img1"  />
+<a id = "prev" class ="prev" ><</a>
+<a id = "nextv" class ="nextv" >></a>
+<a id = "top" class ="top" ></a>
+<a id = "bottom" class ="bottom" >图片加载中......</a>
+</body>
